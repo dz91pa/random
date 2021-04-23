@@ -135,7 +135,7 @@
 		</div>
 	
 <body style="text-align:center">
-<video id="myVideo" class="video-js vjs-default-skin vjs-big-play-centered" controls="true" muted="true" preload="auto" width="800" height="600" data-setup='{}'><source id="source" src="https://rd.91cdn.xyz/hls/videos/3000/3433/3433.mp4/index.m3u8"  type="application/x-mpegURL">
+<video id="myVideo" class="video-js vjs-default-skin vjs-big-play-centered" controls="true" muted="true" preload="auto" width="800" height="600" data-setup='{}'><source id="source" src="https://cdng1.douyincontent.com/hls/contents/videos/0/1/1.mp4/index.m3u8"  type="application/x-mpegURL">
 </video>
 <p>当前地址：<code id="url"</code></p>
 <p>
@@ -203,8 +203,8 @@ myVideo.reset();
 myVideo.play();
 myVideo.pause();
 function reset(){
-        rand = Math.floor(Math.random()*(3000-2000+1)+3000);
-        url = 'https://rd.91cdn.xyz/hls/videos/'+ Math.floor(rand / 1000) * 1000 +'/'+rand+'/'+rand+'.mp4/index.m3u8';
+        rand = Math.floor(Math.random()*(160-130)+1);
+        url = 'https://cdng1.douyincontent.com/hls/contents/videos/0/'+rand+'/'+rand+'.mp4/index.m3u8';
         document.getElementById("url").innerHTML = url;
         myVideo.reset();
         myVideo.src([
